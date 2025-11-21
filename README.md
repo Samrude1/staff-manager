@@ -1,6 +1,5 @@
 # Retro Personnel Management System
 
-![App Screenshot](./screenshots/login-screen.png)
 ![App Screenshot](./screenshots/main-window.png)
 
 A Windows 95-styled web application for managing employee records, built with Node.js, Express, MongoDB, and React.
