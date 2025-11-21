@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Personnel Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=VT323&display=swap");
+
+      body {
+        background-color: #008080; /* Windows 95 Teal Desktop */
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      /* Custom Scrollbar for Webkit */
+      ::-webkit-scrollbar {
+        width: 16px;
+        height: 16px;
+        background: #dfdfdf;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #c0c0c0;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        box-shadow: inset 1px 1px #dfdfdf;
+      }
+      ::-webkit-scrollbar-button {
+        background: #c0c0c0;
+        width: 16px;
+        height: 16px;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              win: {
+                gray: "#c0c0c0",
+                blue: "#000080",
+                text: "#000000",
+                teal: "#008080",
+              },
+            },
+            boxShadow: {
+              outset:
+                "1px 1px 0px 1px #ffffff inset, -1px -1px 0px 1px #000000 inset",
+              inset:
+                "1px 1px 0px 1px #000000 inset, -1px -1px 0px 1px #ffffff inset",
+            },
+          },
+        },
+      };
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
